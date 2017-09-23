@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<p>
+  click the button to display the title
+</p>
+<br>
+<input type="button" value="Click"  (click)="displaytitle()">
+ <h1>{{title}}{{name}} {{LastName}}</h1>
+<div>
+  Name:<input [ngModel]="name" (ngModelChange)="title = $event"><br>
+  LastName:<input [ngModel]="Lastname" (ngModelChange)="name =$event">
+</div>
+
+
+    
+
+
+
+
+
